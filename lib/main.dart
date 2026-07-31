@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:runway_fashion_slider_app/features/splash/ui/splash_screen.dart';
+import 'package:runway_fashion_slider_app/features/home/ui/home_screen.dart';
+import 'package:runway_fashion_slider_app/features/splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home: const HomeScreen(),
     );
   }
 }
