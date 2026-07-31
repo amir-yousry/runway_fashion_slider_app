@@ -84,8 +84,12 @@ The project focuses on creating:
 <img src="assets/screenshots/home.png" width="280">
 </p>
 
+---
+
+## 🚪 Categories
+
 <p align="center">
-<img src="assets/screenshots/home_2.png" width="280">
+<img src="assets/screenshots/categories.png" width="280">
 </p>
 
 ---
