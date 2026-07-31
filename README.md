@@ -108,6 +108,7 @@ The project focuses on creating:
 
 # 🏗️ Project Structure
 
+```
 lib/
 │
 ├── core/
@@ -121,6 +122,7 @@ lib/
 │
 ├── shared/
 └── main.dart
+```
 
 ---
 
