@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:runway_fashion_slider_app/core/widgets/custom_appbar.dart';
 import 'package:runway_fashion_slider_app/features/categories/data/products.dart';
-import 'package:runway_fashion_slider_app/features/categories/ui/widgets/categories_filter_widget.dart';
-import 'package:runway_fashion_slider_app/features/categories/ui/widgets/product_item.dart';
-import 'package:runway_fashion_slider_app/features/product_details/ui/product_details_screen.dart';
+import 'package:runway_fashion_slider_app/core/widgets/categories_filter_widget.dart';
+import 'package:runway_fashion_slider_app/features/categories/ui/widgets/product_item_widget.dart';
+import 'package:runway_fashion_slider_app/features/lobby/ui/lobby_screen.dart';
 
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
@@ -18,7 +18,7 @@ class CategoriesScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const CategoriesFilterWidget(),
+          const CategoryFilterWidget(),
           const SizedBox(height: 13),
           Expanded(
             child: Padding(
@@ -27,8 +27,9 @@ class CategoriesScreen extends StatelessWidget {
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 3,
-                  childAspectRatio: 1 / 1.8,
+                  childAspectRatio: 1 / 2.25,
                 ),
+                itemCount: products.length,
                 itemBuilder: (context, index) {
                   final product = products[index];
                   return ProductItemWidget(
@@ -38,7 +39,7 @@ class CategoriesScreen extends StatelessWidget {
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (c) => ProductDetailsScreen(
+                        builder: (c) => LobbyScreen(
                           image: product.image,
                           name: product.name,
                           price: product.price,
