@@ -5,12 +5,14 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final String prefix;
   final String suffix;
+  final void Function()? onTap;
 
   const CustomAppbar({
     super.key,
     required this.title,
     required this.prefix,
     required this.suffix,
+    this.onTap,
   });
 
   @override

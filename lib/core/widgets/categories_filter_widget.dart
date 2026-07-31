@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class CategoriesFilterWidget extends StatelessWidget {
-  const CategoriesFilterWidget({super.key});
+class CategoryFilterWidget extends StatelessWidget {
+  const CategoryFilterWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
